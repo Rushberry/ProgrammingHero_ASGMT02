@@ -1,0 +1,541 @@
+@import url('https://fonts.cdnfonts.com/css/miama');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header{
+    padding-top: 57px;
+    background: linear-gradient(0deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%), rgb(34, 34, 34);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 190px;
+}
+
+nav > .nav-logo{
+    font-size: 36px;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    text-align: left;
+    font-style: italic;
+}
+
+.nav-options{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    padding: 4px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > .nav-options > ul{
+    display: flex;
+    flex-direction: row;
+    gap: 47px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 46px;
+    padding: 8px 20px 8px 20px;
+    transition: all 0.2s;
+    
+}
+
+nav a:hover, li:first-child a{
+    background: rgb(230, 83, 60);
+    transition: all 0.2s;
+}
+
+
+.bars{
+    display: none;
+}
+
+#Service{
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#Service p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.service{
+    padding: 100px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-heading{
+    text-align: center;
+    width: 620px;
+    margin-bottom: 58px;
+}
+
+.service-heading>p{
+    line-height: 24px;
+}
+
+.service-heading>h1{
+    color: white;
+    margin-bottom: 14px;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.service-container{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+}
+
+.service-container img{
+    border: 5px solid rgb(34, 34, 34);
+    border-radius: 50%;
+}
+
+.service-container>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 231px;
+}
+
+.service-container p{
+    line-height: 18px;
+    text-align: center;
+}
+
+.service-container div h3{
+    margin-top: 30px;
+    margin-bottom: 6px;
+    font-size: 18px;
+    color: white;
+}
+
+.join{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 165px;
+    width: 1060px;
+    height: 371px;
+    margin-bottom: 100px;
+}
+
+.join .text{
+    margin-left: 54px;
+    width: 410px;
+}
+
+.join .text h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 14px;
+}
+
+.join .text p{
+    margin-bottom: 34px;
+    line-height: 24px;
+}
+
+.join .text button{
+    color: white;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    padding: 16px 40px 16px 40px;
+    border: none;
+    font-size: 18px;
+    width: 224px;
+    font-weight: 600;
+}
+
+.join .text button:hover{
+    cursor: pointer;
+}
+
+
+.join .img{
+    background-image: url(assets/run.jpg);
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 32px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* About Section Starts Here */
+
+
+
+
+
+/* About Section Starts Here */
+
+
+#About {
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#About p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.about-heading{
+    text-align: center;
+    width: 620px;
+    margin-bottom: 58px;
+}
+
+.about-heading>p{
+    line-height: 24px;
+}
+
+.about-heading>h1{
+    color: white;
+    margin-bottom: 14px;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.about {
+    padding: 88px 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.team{
+    width: 1060px;
+    height: 604px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+.trainer div{
+    border-radius: 18px;
+    width: 326.67px;
+    height: 272px;
+}
+
+.trainer h3 {
+    color: white;
+}
+
+.trainer .text p{
+    margin-bottom: 20px;
+}
+
+.trainer .text{
+    display: flex;
+    justify-content: end;
+    align-items: first baseline;
+    flex-direction: column;
+    margin-left: 20px;
+    width: fit-content;
+}
+
+.t1, .t2, .t3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#trainer1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/trainer1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#trainer2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/trainer4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#trainer3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/trainer2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#trainer4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/trainer5.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#trainer5 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/trainer3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#trainer6 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/trainer6.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.trainer{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+/* Footer Starts Here */
+
+footer{
+    background: rgb(34, 34, 34);
+    padding-top: 66px;
+    padding-bottom: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: top;
+    width: 1059px;
+}
+
+.footer > div:first-child {
+    width: 415px;
+}
+
+.tittle{
+    font-size: 70px;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.start h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+    margin-bottom: 39px;
+}
+
+.start ul{
+    list-style: none;
+}
+
+.start p{
+    font-size: 23px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.start .last-p{
+    margin-bottom: 0px;
+}
+
+.start a{
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+
+.start a:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.2s;
+}
+
+.copyright {
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    width: 1059px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 79px;
+}
+
+.copyright p{
+    margin-top: 36px;
+}
+
+
+
+/* Responsive Media for Mobile*/
+@media screen and (max-width: 576px){
+    
+    nav li{
+        display: none;
+    }
+    
+    .bars{
+        display: inline;
+        color: white;
+    }
+    
+    
+    .service{
+        padding-top: 0px;
+        padding-bottom: 66px;
+    }
+    .service-container{
+        flex-direction: column;
+        gap: 36px;
+    }
+    
+    .service-heading{
+        width: 318px;
+        
+    }
+    
+    .service-heading>h1{
+        font-size: 32px;
+    }
+    
+    .join{
+        flex-direction: column;
+        width: 353px;
+        height: 531px;
+        gap: 0;
+    }
+    
+    .join .text{
+        margin-top: 31px;
+        margin-left: 33px;
+        margin-right: 33px;
+        margin-bottom: 31px;
+        width: 270px;
+    }
+    
+    .join .text button{
+        width: 270px;
+    }
+    
+    .join .text h1{
+        font-size: 32px;
+    }
+    
+    .join .img{
+        margin-bottom: 35px;
+        margin-top: 0px;
+        margin-left: 33px;
+        margin-right: 33px;
+        width: 270px;
+        height: 170px;
+    }
+    /* Responsive ~ About Section Starts Here */
+    .about{
+        padding: 66px 20px;
+    }
+    .about-heading>h1{
+        font-size: 32px;
+    }
+
+    .about-heading{
+        width: 309px;
+    }
+    
+    .team {
+        width: 363px;
+        height: 1312px;
+    }
+
+    .trainer{
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 0px;
+        justify-content: start;
+    }
+
+    .trainer div{
+        height: 303px;
+    }
+
+
+    .t2{
+        margin-bottom: 323px;
+    }
+
+    .t1{
+        display: none;
+    }
+    /* Responsive ~ Footer Starts Here */
+    
+    footer{
+        padding-top: 44px;
+    }
+    .footer > div:last-child{
+        margin-top: 20px;
+    }
+
+    .footer > div:first-child {
+        width: 305px;
+        margin-bottom: 30px;
+    }
+
+    .footer{
+        flex-direction: column;
+        width: 354px;
+        justify-content: center;
+    }
+    
+    .copyright{
+        width: 354px;
+        margin-top: 72px;
+    }
+    
+}
