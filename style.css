@@ -144,7 +144,7 @@ nav a:hover, li:first-child a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 165px;
     width: 1060px;
     height: 371px;
@@ -196,11 +196,162 @@ nav a:hover, li:first-child a{
     background-position: center;
 }
 
-/* About Section Starts Here */
+/* BMI Section Starts Here */
+#BMI {
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#BMI p, .bmi-calculator td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.bmi-heading{
+    text-align: left;
+    width: 620px;
+    margin-bottom: 58px;
+}
+
+.bmi-heading>p{
+    line-height: 24px;
+}
+
+.bmi-heading>h1{
+    color: white;
+    margin-bottom: 14px;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.bmi-calculator {
+    background-color: rgb(34, 34, 34);
+    padding: 52px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 175px;
+    width: 100%;
+}
+
+.bmi-calculator h3{
+    font-weight: 900;
+    font-size: 28px;
+    color: white;
+}
+
+.bmi-calculator table{
+    margin-top: 52px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.bmi-calculator table>thead th {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+.bmi-calculator td, .bmi-calculator th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+}
+
+.calculator p {
+    width: 570px;
+    line-height: 24px;
+    margin-top: 14px;
+}
+
+form input[type="submit"] {
+    padding: 16px 40px 16px 40px;
+    color: white;
+    border-radius: 42px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 224px;
+    border: none;
+    background: rgb(230, 83, 60);
+    cursor: pointer;
+    margin-top: 22px;
+}
 
 
+form div input[type="text"], #gender {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 0px 12px 20px;
+    border: none;
+    width: 282.5px;
+}
+
+#activity-factor{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px 0px 12px 20px;
+    border: none;
+    width: 100%;
+    appearance: none;
+    background-image: url("assets/chevron-down-solid.svg");
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: right 26px center;
+}
+
+#gender{
+    appearance: none;
+    background-image: url("assets/chevron-down-solid.svg");
+    background-repeat: no-repeat;
+    background-size: 17px;
+    background-position: right 26px center;
+}
+
+#age{
+    width: 263.5px;
+}
+
+form input[type="text"]::placeholder{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+form input[type="text"]:focus, form select:focus{
+    outline: none;
+}
+
+.calculator form > div {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    width: 577px;
+}
 
 
+option{
+    color: rgba(255, 255, 255, 0.6);
+    background-color: black;
+    margin-top: 10px;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+.calculator form {
+    margin-top: 34px;
+}
 
 /* About Section Starts Here */
 
@@ -248,7 +399,7 @@ nav a:hover, li:first-child a{
     width: 1060px;
     height: 604px;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #ffffff1a;
     display: flex;
     justify-content: center;
 }
@@ -477,6 +628,45 @@ footer p {
         width: 270px;
         height: 170px;
     }
+
+    /* Responsive ~ BMI Section Starts Here */
+
+    .bmi-heading{
+        width: 353px;
+    }
+    .bmi-heading>h1{
+        font-size: 32px;
+    }
+    .bmi-calculator{
+        flex-direction: column;
+        padding-top: 34px;
+        padding-bottom: 43px;
+        padding-left: 20px;
+        gap: 42px;
+        width: 95%;
+    }
+    .bmi-calculator h3{
+    font-size: 16px;
+    }
+    .bmi-calculator table{
+        margin-top: 23px;
+    }
+    #gender{
+        width: 100%;
+    }
+    .calculator p{
+        width: 346px;
+    }
+    .calculator form > div{
+        width: 353px;
+    }
+    form div input[type="text"] {
+        width: 150.5px;
+    }
+    #age{
+        width: 150.5px;
+    }
+
     /* Responsive ~ About Section Starts Here */
     .about{
         padding: 66px 20px;
