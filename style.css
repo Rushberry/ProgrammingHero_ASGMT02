@@ -343,6 +343,7 @@ option{
     color: rgba(255, 255, 255, 0.6);
     background-color: black;
     margin-top: 10px;
+    font-size: 16px;
 }
 
 select:hover{
@@ -388,7 +389,7 @@ select:hover{
 }
 
 .about {
-    padding: 88px 190px;
+    padding: 88px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -475,6 +476,110 @@ select:hover{
     gap: 20px;
     justify-content: start;
     margin-top: 20px;
+}
+/* Success Stories Starts Here */
+
+#success_stories {
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#success_stories{
+    background-color:rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#success_stories p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.success_stories{
+    margin-bottom: 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-heading{
+    text-align: center;
+    width: 620px;
+    margin-bottom: 58px;
+}
+
+.success-heading>p{
+    line-height: 24px;
+}
+
+.success-heading>h1{
+    color: white;
+    margin-bottom: 14px;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.stories{
+    width: 1020px;
+    background-color: rgb(34, 34, 34);
+    padding: 20px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.success_stories h3{
+    color: white;
+}
+
+.success_stories h2{
+    color: white;
+    font-weight: 400;
+    font-family: miama;
+    font-size: 22px;
+    margin-top: 20%;
+}
+
+.success_tellers{
+    width: 326.67px;
+    height: 370px;
+    border-radius: 18px;
+    
+}
+
+.success_tellers>div{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 335px;
+    
+}
+
+#teller1{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/teller1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#teller2{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/teller2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#teller3{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/teller3.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /* Footer Starts Here */
@@ -666,6 +771,9 @@ footer p {
     #age{
         width: 150.5px;
     }
+    .bmi-heading>p{
+        width: 346px;
+    }
 
     /* Responsive ~ About Section Starts Here */
     .about{
@@ -703,6 +811,21 @@ footer p {
     .t1{
         display: none;
     }
+    /* Responsive ~ Success Stories Starts Here */
+
+    .stories{
+        width: 326px;
+        flex-direction: column;
+    }
+
+    .success-heading>h1{
+        font-size: 32px;
+    }
+
+    .success-heading{
+        width: 309px;
+    }
+
     /* Responsive ~ Footer Starts Here */
     
     footer{
