@@ -7,11 +7,11 @@
     padding: 0;
 }
 
-
+/* Header Section Starts Here */
 
 header{
     padding-top: 57px;
-    background: linear-gradient(0deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%), rgb(34, 34, 34);
+    background: linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%), rgb(34, 34, 34);
 }
 
 nav{
@@ -19,6 +19,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: 0px 190px;
+    flex-direction: row;
 }
 
 nav > .nav-logo{
@@ -66,6 +67,80 @@ nav a:hover, li:first-child a{
 .bars{
     display: none;
 }
+
+/* Home Section Starts Here */
+
+#Home{
+    background: linear-gradient(0deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%), rgb(34, 34, 34);
+    display: flex;
+    justify-content: center;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    gap: 167px;
+}
+
+.btns{
+    display: flex;
+    gap: 14px;
+    flex-direction: row;
+}
+
+.btns a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn{
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    border: none;
+}
+
+.btn1{
+    background: rgb(230, 83, 60);
+}
+
+.btn2{
+    background: none;
+    border: 1px solid white;
+}
+
+.head{
+    width: 520px;
+    margin-top: 65px;
+    margin-bottom: 60px;
+}
+
+.head h1 {
+    font-size: 78px;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: left;
+    color: white;
+}
+
+.head p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+
+.shape{
+    font-weight: 400;
+    font-family: 'miama';
+    font-size: 150px;
+}
+/* Service Section Starts Here */
 
 #Service{
     background-color:rgb(0, 0, 0);
@@ -672,18 +747,29 @@ footer p {
 
 
 /* Responsive Media for Mobile*/
+
 @media screen and (max-width: 576px){
-    
+    /* Responsive ~ Header Section Starts Here */
     nav li{
         display: none;
     }
     
     .bars{
-        display: inline;
-        color: white;
+        display: block;
+        width: 24px;
+        height: 24px;
     }
     
-    
+    nav{
+        margin: 0px 20px;
+    }
+    .nav-options{
+        display: none;
+    }
+    /* Responsive ~ Home Section Starts Here */
+
+
+    /* Responsive ~ Service Section Starts Here */
     .service{
         padding-top: 0px;
         padding-bottom: 66px;
