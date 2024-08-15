@@ -96,7 +96,8 @@ nav a:hover, li:first-child a{
 }
 
 .btn{
-    padding: 16px 40px 16px 40px;
+    width: 224px;
+    height: 54px;
     border-radius: 42px;
     border: none;
 }
@@ -149,7 +150,7 @@ nav a:hover, li:first-child a{
 .img_text img{
     width: 349px;
     height: 580px;
-    margin-bottom: -6px;
+    margin-bottom: -4px;
 }
 
 .home{
@@ -869,10 +870,15 @@ footer p {
 
 @media screen and (max-width: 576px){
     /* Responsive ~ Header Section Starts Here */
+    
     nav li{
         display: none;
     }
     
+    .nav-logo>h1{
+        font-size: 36px;
+    }
+
     .bars{
         display: block;
         width: 24px;
@@ -888,8 +894,107 @@ footer p {
     }
     /* Responsive ~ Home Section Starts Here */
 
+    .home{
+        flex-direction: column;
+        gap: 48px;
+        margin-left: 0px;
+    }
+
+    #home{
+        align-items: center;
+    }
+
+    .btn{
+        width: 169px;
+    }
+
+    .head{
+        width: 352px;
+        margin-bottom: 0;
+        margin-top: 51px;
+    }
+
+    .head h1{
+        width: 286px;
+        font-size: 36px;
+    }
+
+    .head p{
+        width: 274px;
+    }
+
+    .shape{
+        font-size: 70px;
+    }
+
+    
+
+    .img_text img {
+        margin-bottom: -95px;
+        z-index: -1;
+    }
+
+    #box-1{
+        top: 48px;
+        left: 194px;
+        width: 145.91px;
+        height: 74.09px;
+    }
+    #box-2{
+        top: 271px;
+        left: 12px;
+        width: 155.74px;
+        height: 72.58px;
+    }
+
+    #box-1 p{
+        letter-spacing: 0.76px;
+        font-size: 9.83px;
+    }
+
+    #box-1 h1{
+        font-size: 30.24px;
+        letter-spacing: 0.76px;
+    }
+
+    #box-2 svg{
+        width: 15.12px;
+        height: 15.12px;
+    }
+
+    #box-2 h1{
+        font-size: 18.14px;
+        letter-spacing: 0.23px;
+    }
+
+    #box-2 p{
+        letter-spacing: 0.38px;
+        font-size: 12px;
+    }
+
+    #box-2 > div div:first-child{
+        width: 30.24px;
+        height: 30.24px;
+    }
+
+    #box-2> div{
+        margin-top: 21px;
+        margin-left: 17px;
+        margin-bottom: 21px;
+    }
+    #box-1> div{
+        margin-top: 12px;
+        margin-left: 18px;
+        margin-bottom: 12px;
+    }
 
     /* Responsive ~ Service Section Starts Here */
+    
+    #Service{
+        z-index: 2;
+        position: relative;
+    }
+    
     .service{
         padding-top: 0px;
         padding-bottom: 66px;
