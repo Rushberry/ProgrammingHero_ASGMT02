@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+p{
+    letter-spacing: 0.5px;
+}
+
 /* Header Section Starts Here */
 
 header{
@@ -16,9 +20,10 @@ header{
 
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 0px 190px;
+    margin: 0px 0px;
+    gap: 463px;
     flex-direction: row;
 }
 
@@ -76,11 +81,6 @@ nav a:hover, li:first-child a{
     justify-content: center;
 }
 
-.home{
-    display: flex;
-    flex-direction: row;
-    gap: 167px;
-}
 
 .btns{
     display: flex;
@@ -110,11 +110,6 @@ nav a:hover, li:first-child a{
     border: 1px solid white;
 }
 
-.head{
-    width: 520px;
-    margin-top: 65px;
-    margin-bottom: 60px;
-}
 
 .head h1 {
     font-size: 78px;
@@ -140,6 +135,130 @@ nav a:hover, li:first-child a{
     font-family: 'miama';
     font-size: 150px;
 }
+
+.img_text{
+    position: relative;
+}
+
+.head{
+    width: 520px;
+    margin-top: 65px;
+    margin-bottom: 60px;
+}
+
+.img_text img{
+    width: 349px;
+    height: 580px;
+    margin-bottom: -6px;
+}
+
+.home{
+    display: flex;
+    flex-direction: row;
+    gap: 257px;
+    margin-left: -73px;
+    justify-content: center;
+}
+
+#box-1, #box-2{
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.img_text div p{
+    color: rgba(239, 237, 232, 0.65);
+    font-weight: 400;
+}
+
+#box-1{
+    width: 193px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: left;
+    align-items: left;
+    left: 230px;
+    top: 125px;
+}
+
+#box-1 p{
+    font-size: 13px;
+}
+
+#box-1 h1{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: white;
+}
+
+#box-1 > div{
+    margin-top: 17px;
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+
+#box-2{
+    width: 206px;
+    height: 96px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    top: 421px;
+    right: 256px;
+}
+
+#box-2> div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    margin-left: 23px;
+    margin-bottom: 20px;
+}
+
+#box-2 h1{
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 0.3px;
+}
+
+#box-2 > div div:first-child{
+    width: 40px;
+    height: 40px;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box-2 > div div:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#box-2 svg{
+    width: 15.12px;
+    height: 15.12px;
+}
+
+#box-2 p{
+    font-size: 16px;
+}
+
 /* Service Section Starts Here */
 
 #Service{
@@ -761,8 +880,9 @@ footer p {
     }
     
     nav{
-        margin: 0px 20px;
+        gap: 197px;
     }
+
     .nav-options{
         display: none;
     }
